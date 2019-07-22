@@ -1152,6 +1152,7 @@ if (isset($_SESSION["Valores_Info"])) {
 			
 			/*Adiciona os elementos relacionados com cada tipo*/
 			if(acao == 1){
+			document.getElementById("CNPJ").readOnly = true;
 			document.getElementById("Radio_Juridica").checked = true;
 			document.getElementById("Radio_Fisica").disabled = true;
 
@@ -1174,6 +1175,7 @@ if (isset($_SESSION["Valores_Juridica"])) {
 ?>";
 			
 		}else if(acao == 2){
+			document.getElementById("CPF").readOnly = true;
 			document.getElementById("Juridica").style.display = "none";
 			document.getElementById("Fisica").style.display = "block";  
 			document.getElementById("Radio_Fisica").checked = true;
